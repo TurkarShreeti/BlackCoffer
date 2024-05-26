@@ -1,5 +1,6 @@
 const express = require('express');
-const {getApi}=require("../controller/controller");
+const {getApi, postApi}=require("../controller/controller");
 const router = express.Router();
 router.get("/",getApi);
+router.post('/', postApi);
 module.exports = router;
